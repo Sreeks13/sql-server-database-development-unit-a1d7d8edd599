@@ -30,3 +30,5 @@ ORDER BY c.ObjectID;
 -- Nonclustered-style index for object + date searches
 CREATE INDEX IF NOT EXISTS IX_Sightings_ObjectID_ObservationDate
 ON Sightings(ObjectID, ObservationDate DESC);
+
+-- Verified latest observation and index query
